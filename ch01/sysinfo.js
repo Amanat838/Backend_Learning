@@ -5,7 +5,7 @@ function convertBytesToGB(bytes) {
 }
 
 const name = process.argv[2] ?? "Stranger"
-console.log(`Hello ${name}`);
+console.log(`Helloo ${name}`);
 console.log("Node version: ",process.version);
 console.log("Platform: ",process.platform);
 console.log("CPU cores: ",os.cpus().length);
