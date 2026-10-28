@@ -20,3 +20,5 @@ A: We leave node modules out and commit the other two.
 The number after running ls -la /c/Windows/System32 | wc -l is 4477, and it means total number of lines in System32, 
 The command used for this after reaching System 32 folder using cd is "ls -la | sort -k5 -r | head -n 5"
 ls -la is used to print list of all files, sort -k5 is used for sorting in ascending order then -r reverses ascending to descending order and finally head -n 5 is used for top 5 files.
+
+
