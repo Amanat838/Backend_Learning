@@ -51,3 +51,14 @@
 - Confused by: I named "query" as the third part of a request instead of the path, and I forgot headers in the response.
 - Fixed: nothing broke.
 - Next: merge everything into one 8–12 sentence answer in interview.md and say it out loud without notes.
+
+## 2026-10-29 · Checkpoint 5 (HTTP up close)
+- Learned: an empty line (`\r\n\r\n`) separates the headers from the body; `Content-Length` says how many body bytes to read.
+- Learned: `#fragment` never reaches the server. The browser just scrolls.
+- Learned: GET must never change data, because link previews (WhatsApp), crawlers, prefetching and caches all send GET on their own. `GET /bookings/7/cancel` could cancel a booking when someone shares the link. Use DELETE or PATCH instead.
+- Learned: status codes for Slotify: 201 created, 409 slot taken, 401 not logged in, 403 not allowed, 204 deleted with no body.
+- Learned: everything in a URL arrives as a string (`?page=3` → `"3"`), so `page + 1` is `"31"`. Zod's `z.coerce.number()` fixes this later.
+- Confused by: why GET has to be safe. I didn't know the answer.
+- Confused by: how a stateless server remembers users. The client sends the cookie or token with every request, and the server checks it every time (like an event wristband).
+- Fixed: nothing broke.
+- Next: Task 5.1 (status code judge).
