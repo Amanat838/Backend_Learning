@@ -34,3 +34,9 @@ hint: Disable this message with "git config advice.forceDeleteBranch false"
 I think this means that the temp-idea branch has a change and it's committed but you cannot delete the branch until the change is merged with another branchn because currently it's committed and if I try to delete the branch then what will happen to the change I already committed.
 
 I merged temp-idea with main and then deleted this branch using git branch -d temp-idea, it did not show any error this time.
+
+
+# Task 2.3 #
+
+git restore <path>, restores the file to recently commited file. Meaning it will change the file in computer to the file in commit. amend helps in changing commit message after it's already committed it rewrites history.
+git restore --staged removes file from staging area i.e if I added a file using git add . then before committing if I want to remove that file from staign I used git restore --staged.
